@@ -1,10 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { getDataMovie } from "../../store/action"
 
 const TableComponent = () => {
+    const dataMovies = useSelector(state => state.dataMovies)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getDataMovie())
+    }, [])
 
     return (
         <>
-            <h1>Table Component</h1>
+            { JSON.stringify(dataMovies) }
         </>
     )
 }
