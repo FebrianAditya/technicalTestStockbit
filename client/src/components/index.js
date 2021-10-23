@@ -1,2 +1,6 @@
 export { default as TableComponent } from "./TableComponent/TableComponent"
 export { default as SideBarComponent } from "./SideBarComponent/SideBarComponent"
+export { default as ModalComponent } from "./ModalComponent/ModalComponent"
+export { default as CardComponent } from "./CardComponent/CardComponent"
+export { default as DetailComponent } from "./DetailComponent/DetailComponent"
+export { default as SearchBoxComponent } from "./SearchBoxComponent/SearchBoxComponent"
